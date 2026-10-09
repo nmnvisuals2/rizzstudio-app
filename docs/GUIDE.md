@@ -217,12 +217,3 @@ Interface (Art-Net/sACN), address, universe.
 Never hangs: per-attempt timeout (default 4 min, process killed), Cancel button, fallback chain
 (chosen model → CLI default model → other CLI → rules). Runs via `zsh -l` so Finder-launched apps see your PATH.
 
-## Headless
-
-```sh
-.build/release/Touchableton --analyze "Set.als" --songs 3 [--match rumble] [--bake --out x.mid] [--plan --backend codex]
-.build/release/Touchableton --syphon-test        # list Syphon senders + grab one LED-wall frame
-.build/release/Touchableton --audio track.wav [--bpm 124]   # tempo / swing of a bare audio file
-.build/release/Touchableton --analyze "Set.als" --match silk --bake --groups   # locked/layered report
-```
-

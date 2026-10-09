@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ableton DMX Lighting Control | RizzStudio</title>
+<meta name="description" content="Control DMX lights from Ableton Live. RizzStudio exports shows as DMX-over-MIDI clips, sent via TouchDesigner to Art-Net or sACN in perfect sync.">
+<link rel="canonical" href="https://nmnvisuals2.github.io/rizzstudio-app/ableton-dmx-lighting/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050506">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="RizzStudio">
+<meta property="og:title" content="Ableton DMX Lighting Control | RizzStudio">
+<meta property="og:description" content="Control DMX lights from Ableton Live. RizzStudio exports shows as DMX-over-MIDI clips, sent via TouchDesigner to Art-Net or sACN in perfect sync.">
+<meta property="og:url" content="https://nmnvisuals2.github.io/rizzstudio-app/ableton-dmx-lighting/">
+<meta property="og:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ableton DMX Lighting Control | RizzStudio">
+<meta name="twitter:description" content="Control DMX lights from Ableton Live. RizzStudio exports shows as DMX-over-MIDI clips, sent via TouchDesigner to Art-Net or sACN in perfect sync.">
+<meta name="twitter:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css?v=1.1.0">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "RizzStudio", "item": "https://nmnvisuals2.github.io/rizzstudio-app/"}, {"@type": "ListItem", "position": 2, "name": "Ableton DMX", "item": "https://nmnvisuals2.github.io/rizzstudio-app/ableton-dmx-lighting/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "DMX lighting control from Ableton Live", "description": "Control DMX lights from Ableton Live. RizzStudio exports shows as DMX-over-MIDI clips, sent via TouchDesigner to Art-Net or sACN in perfect sync.", "url": "https://nmnvisuals2.github.io/rizzstudio-app/ableton-dmx-lighting/", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "publisher": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "image": "https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg", "about": {"@type": "SoftwareApplication", "name": "RizzStudio"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Ableton Live output DMX?", "acceptedAnswer": {"@type": "Answer", "text": "Not natively. RizzStudio encodes DMX as MIDI notes inside Ableton, and the bundled TouchDesigner receiver turns that MIDI into Art-Net or sACN for your lights."}}, {"@type": "Question", "name": "Do I need Max for Live?", "acceptedAnswer": {"@type": "Answer", "text": "No. The show is plain MIDI clips that any edition of Ableton Live can play."}}, {"@type": "Question", "name": "How many DMX channels can I control?", "acceptedAnswer": {"@type": "Answer", "text": "Up to four universes (2,048 channels), encoded across MIDI channels 1–16."}}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../#how">Features</a></li><li><a href="../ai-light-show/">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/" aria-current="page">Ableton DMX</a></li><li><a href="../guide/">Guide</a></li>
+      <li><a class="btn btn-primary btn-sm" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip">Download</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="page-hero"><div class="wrap"><p class="crumbs"><a href="../">RizzStudio</a> / Ableton DMX</p><h1>DMX lighting control from Ableton Live</h1><p class="lede">Run your whole light show from the Ableton timeline. The lights follow every tempo change, scene launch and live edit.</p></div></section><div class="wrap"><article class="prose"><p>Ableton Live is already the clock of your show, so it makes sense for it to run the lights too.
+<strong>RizzStudio turns Ableton into a DMX lighting controller</strong>. It programs a light show for your set
+and writes it back into Ableton as MIDI, so your lights follow every tempo change, scene launch and live edit.</p>
+
+<figure><img src="../assets/img/feature-dmx.jpg" width="1536" height="1024" loading="lazy"
+  alt="Ableton Live on a laptop connected through a DMX interface to stage lights"></figure>
+
+<h2>Why control DMX lighting from Ableton?</h2>
+<ul>
+  <li><strong>One clock.</strong> The lights live in the same timeline as the audio, so drift and timecode
+    are never a problem.</li>
+  <li><strong>Follows tempo changes.</strong> Warp, nudge or ride the master tempo and the light show moves with it.</li>
+  <li><strong>No extra show computer.</strong> Ableton plays the show while a light TouchDesigner patch converts it to
+    Art-Net or sACN.</li>
+  <li><strong>Works for live sets and DJ sets.</strong> Use Arrangement for a fixed set or Session clips per song for
+    improvised performances.</li>
+</ul>
+
+<h2>How RizzStudio sends DMX from Ableton</h2>
+<p>RizzStudio encodes DMX as MIDI notes, an approach that's simple, robust and lossless enough for real shows:</p>
+<pre><code>slot = (universe − 1) × 512 + (address − 1)      up to 4 universes
+MIDI channel = slot ÷ 128 + 1,  note = slot mod 128
+velocity 1–127 = DMX 0–255 while held, no note = 0</code></pre>
+<p>You can export the show two ways:</p>
+<h3>Arrangement show (.mid)</h3>
+<p>A type-1 MIDI file with one track per MIDI channel. Drop it at bar 1, set each track's <em>MIDI To</em> to the IAC
+Driver bus and the right channel, and you're done. In DJ-style sets, overlapping songs hand over at the midpoint of the overlap.</p>
+<h3>Session clips per song</h3>
+<p>Clip-relative DMX clips you launch next to each audio clip, so lights follow the song wherever you trigger it.</p>
+<p>For lean projects, fine channels are dropped and pixel bars are reduced to 1/8-note resolution with 16 levels. You
+can choose 1/8, 1/16 or 1/32 resolution.</p>
+
+<h2>From Ableton to your fixtures</h2>
+<p>Ableton sends the MIDI to the bundled <a href="../touchdesigner-dmx/">TouchDesigner receiver</a>, which decodes it
+and outputs <strong>Art-Net or sACN</strong> to any node or interface. Every output is remapped to each fixture's
+<strong>real DMX personality</strong> using profiles from the Open Fixture Library, so you don't have to re-patch your
+lights to suit the software.</p>
+
+<h2>Supported fixtures</h2>
+<p>Moving heads (with real pan/tilt ranges, colour and gobo wheels), RGB washes, strobes, blinders, lasers, pixel bars,
+LED walls and special effects including haze, CO₂, sparkulars, confetti and flame units. Pyro arm channels stay safe
+unless you arm them live, and they are never armed in exports.</p>
+
+<h2>Programming the show</h2>
+<p>You can program cues yourself on the timeline, but you don't have to. RizzStudio's
+<a href="../ai-light-show/">AI light show generator</a> analyses every song and programs a beat-accurate show
+automatically. You review and tweak it, then export to Ableton.</p>
+<h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>Can Ableton Live output DMX?</summary><p>Not natively. RizzStudio encodes DMX as MIDI notes inside Ableton, and the bundled TouchDesigner receiver turns that MIDI into Art-Net or sACN for your lights.</p></details>
+<details><summary>Do I need Max for Live?</summary><p>No. The show is plain MIDI clips that any edition of Ableton Live can play.</p></details>
+<details><summary>How many DMX channels can I control?</summary><p>Up to four universes (2,048 channels), encoded across MIDI channels 1–16.</p></details></div></article><div class="cta-band" style="margin-top:64px"><img src="../assets/img/icon.png" width="84" height="84" alt="RizzStudio app icon" loading="lazy"><h2>Try RizzStudio <em>free</em></h2><p>AI light shows for Ableton Live on macOS. No API key needed.</p><div class="cta-row"><a class="btn btn-primary" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.75.66 1.13-.02 1.85-1.03 2.55-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.4c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.62-.88 2.57.93.07 1.88-.47 2.46-1.17z"/></svg> Download for macOS</a></div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
+        <p style="margin-top:14px;max-width:320px">AI light show software for Ableton Live on macOS. Your set in, a full
+          light show out.</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="../">Overview</a></li>
+        <li><a href="../download/">Download</a></li>
+        <li><a href="https://github.com/nmnvisuals2/rizzstudio-app/releases">Release notes</a></li>
+        <li><a href="../guide/">User guide</a></li></ul></div>
+      <div><h4>Learn</h4><ul><li><a href="../ai-light-show/">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/">Ableton DMX</a></li><li><a href="../touchdesigner-dmx/">TouchDesigner</a></li><li><a href="../alternatives/">Alternatives</a></li><li><a href="../download/">Download</a></li><li><a href="../guide/">Guide</a></li></ul></div>
+      <div><h4>Works with</h4><ul>
+        <li>Ableton Live</li><li>TouchDesigner</li><li>Art-Net · sACN</li><li>Open Fixture Library</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 RizzStudio by NMN Visuals</span>
+      <span>Ableton and TouchDesigner are trademarks of their respective owners.</span></div>
+  </div>
+</footer>
+<script src="../assets/main.js?v=1.1.0" defer></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Light Show Generator for DMX Lights | RizzStudio</title>
+<meta name="description" content="Generate a DMX light show from music automatically. RizzStudio&#x27;s AI detects drops, builds and every kick and clap, then programs your lights.">
+<link rel="canonical" href="https://nmnvisuals2.github.io/rizzstudio-app/ai-light-show/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050506">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="RizzStudio">
+<meta property="og:title" content="AI Light Show Generator for DMX Lights | RizzStudio">
+<meta property="og:description" content="Generate a DMX light show from music automatically. RizzStudio&#x27;s AI detects drops, builds and every kick and clap, then programs your lights.">
+<meta property="og:url" content="https://nmnvisuals2.github.io/rizzstudio-app/ai-light-show/">
+<meta property="og:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Light Show Generator for DMX Lights | RizzStudio">
+<meta name="twitter:description" content="Generate a DMX light show from music automatically. RizzStudio&#x27;s AI detects drops, builds and every kick and clap, then programs your lights.">
+<meta name="twitter:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css?v=1.1.0">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "RizzStudio", "item": "https://nmnvisuals2.github.io/rizzstudio-app/"}, {"@type": "ListItem", "position": 2, "name": "AI Light Show", "item": "https://nmnvisuals2.github.io/rizzstudio-app/ai-light-show/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "AI light show generator for music", "description": "Generate a DMX light show from music automatically. RizzStudio's AI detects drops, builds and every kick and clap, then programs your lights.", "url": "https://nmnvisuals2.github.io/rizzstudio-app/ai-light-show/", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "publisher": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "image": "https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg", "about": {"@type": "SoftwareApplication", "name": "RizzStudio"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is an AI light show different from sound-to-light?", "acceptedAnswer": {"@type": "Answer", "text": "Sound-to-light reacts to volume in real time. RizzStudio's AI light show is designed in advance from the structure of each song, including sections, drops, pre-drops, silences and individual instruments, so cues anticipate the music instead of lagging behind it."}}, {"@type": "Question", "name": "Which AI does RizzStudio use?", "acceptedAnswer": {"@type": "Answer", "text": "Your local Claude Code or Codex CLI. You pick the engine and effort level in Settings. There's a timeout, cancel button and fallback chain, so planning never hangs."}}, {"@type": "Question", "name": "Can I edit the AI's light show?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every cue, section and lane block can be edited on the timeline, and you can select any range and ask the AI for a specific cue there."}}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../#how">Features</a></li><li><a href="../ai-light-show/" aria-current="page">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/">Ableton DMX</a></li><li><a href="../guide/">Guide</a></li>
+      <li><a class="btn btn-primary btn-sm" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip">Download</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="page-hero"><div class="wrap"><p class="crumbs"><a href="../">RizzStudio</a> / AI Light Show</p><h1>AI light show generator for music</h1><p class="lede">Turn any song into a beat-accurate DMX light show. RizzStudio analyses the music and an AI lighting designer programs every cue.</p></div></section><div class="wrap"><article class="prose"><p>Programming a light show by hand takes hours per song: placing cues, building chases, timing strobes to snare rolls
+and lining blackouts up with drops. <strong>RizzStudio is an AI light show generator for macOS</strong> that does the
+programming for you. Give it your music and it gives you back a complete, beat-accurate DMX show.</p>
+
+<figure><img src="../assets/img/feature-analysis.jpg" width="1536" height="1024" loading="lazy"
+  alt="Music waveform turning into light beams: an AI light show generated from audio"></figure>
+
+<h2>How an AI light show is generated</h2>
+<p>RizzStudio doesn't map volume to brightness the way a basic sound-to-light mode does. It works through each song in three stages:</p>
+<ol>
+  <li><strong>Analysis.</strong> Tempo, key, sections and energy are measured, and the track is split into percussive and
+    tonal parts so every <em>kick, clap, hat, percussion hit, bassline note and lead</em> is detected. Silences and cuts
+    are found down to 1/16 notes, and swing is measured bar by bar.</li>
+  <li><strong>AI planning.</strong> An AI lighting designer, running in your local <strong>Claude Code</strong> or
+    <strong>Codex</strong> CLI, labels each section (intro, build, pre-drop, drop, breakdown…) and writes a cue for it: the
+    feel, mover patterns, gobos, colour mode, wash, strobes, lasers, pixels, effects and accent hits. It sees beat-level
+    detail around every change, so cues land on the musical moment you'd pick by ear.</li>
+  <li><strong>Granular programming.</strong> Every section is split into 1, 2, 4 or 8-bar chunks, each with its own
+    pattern, speed, sync (unison, spread, mirror, alternate), dimmer FX and colours. Aggressive passages get fast unison
+    snaps and shaking gobos, ambient passages get slow breathing washes, and builds accelerate into the drop.</li>
+</ol>
+
+<div class="callout"><strong>No API key, no subscription to us.</strong> The AI runs through the Claude Code or Codex
+CLI you already use. Without either, a built-in rules engine still programs the full show.</div>
+
+<h2>What makes the lights feel musical</h2>
+<h3>Drops that escalate</h3>
+<p>Drops are numbered (Drop 1, Drop 2…) and each one is programmed bigger: more energy, more fixtures, harder
+accents. That's how a human lighting designer paces a set.</p>
+<h3>The pre-drop moment</h3>
+<p>The 1–2 bar moment right before a drop, whether a drum roll, an impact or a silent gap, is detected separately from
+the riser and lit as its own moment. It might be a strobe roll that follows the snare, a white impact, or total
+darkness with a blackout on the last beat.</p>
+<h3>Lights that follow instruments</h3>
+<p>Each light group follows a part that is actually playing. Washes pump on the kick, strobes fire on claps (so a snare
+roll speeds up the strobe), pixels run on the hats and movers ride the lead. With optional
+<strong>stem separation</strong> (Demucs on the Apple-silicon GPU), detection gets even cleaner.</p>
+<h3>Your direction, your references</h3>
+<p>Write a brief for any song, such as "dark, red and white only, save the lasers for the last drop", and add reference
+links. With Claude Code, RizzStudio watches the reference videos and borrows their palette, fixture use and pacing.</p>
+
+<h2>Refine anything by hand</h2>
+<p>The AI does the first 95%, and the timeline lets you finish it. Rename sections, lock or layer light groups,
+program individual lane blocks, or drag across a range and ask the AI for a specific cue, like "a white strobe hit on
+this snare pickup". Solo, mute and a master blackout cover live tweaks.</p>
+
+<h2>From generated show to real lights</h2>
+<p>The finished show plays in a realistic 3D stage preview and exports <a href="../ableton-dmx-lighting/">into
+Ableton Live as DMX-over-MIDI</a>, so Ableton drives your rig through the bundled
+<a href="../touchdesigner-dmx/">TouchDesigner receiver</a> to Art-Net, sACN or DMX. You can also render it to an
+MP4 to show promoters what your set will look like.</p>
+<h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>How is an AI light show different from sound-to-light?</summary><p>Sound-to-light reacts to volume in real time. RizzStudio&#x27;s AI light show is designed in advance from the structure of each song, including sections, drops, pre-drops, silences and individual instruments, so cues anticipate the music instead of lagging behind it.</p></details>
+<details><summary>Which AI does RizzStudio use?</summary><p>Your local Claude Code or Codex CLI. You pick the engine and effort level in Settings. There&#x27;s a timeout, cancel button and fallback chain, so planning never hangs.</p></details>
+<details><summary>Can I edit the AI&#x27;s light show?</summary><p>Yes. Every cue, section and lane block can be edited on the timeline, and you can select any range and ask the AI for a specific cue there.</p></details></div></article><div class="cta-band" style="margin-top:64px"><img src="../assets/img/icon.png" width="84" height="84" alt="RizzStudio app icon" loading="lazy"><h2>Try RizzStudio <em>free</em></h2><p>AI light shows for Ableton Live on macOS. No API key needed.</p><div class="cta-row"><a class="btn btn-primary" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.75.66 1.13-.02 1.85-1.03 2.55-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.4c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.62-.88 2.57.93.07 1.88-.47 2.46-1.17z"/></svg> Download for macOS</a></div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
+        <p style="margin-top:14px;max-width:320px">AI light show software for Ableton Live on macOS. Your set in, a full
+          light show out.</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="../">Overview</a></li>
+        <li><a href="../download/">Download</a></li>
+        <li><a href="https://github.com/nmnvisuals2/rizzstudio-app/releases">Release notes</a></li>
+        <li><a href="../guide/">User guide</a></li></ul></div>
+      <div><h4>Learn</h4><ul><li><a href="../ai-light-show/">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/">Ableton DMX</a></li><li><a href="../touchdesigner-dmx/">TouchDesigner</a></li><li><a href="../alternatives/">Alternatives</a></li><li><a href="../download/">Download</a></li><li><a href="../guide/">Guide</a></li></ul></div>
+      <div><h4>Works with</h4><ul>
+        <li>Ableton Live</li><li>TouchDesigner</li><li>Art-Net · sACN</li><li>Open Fixture Library</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 RizzStudio by NMN Visuals</span>
+      <span>Ableton and TouchDesigner are trademarks of their respective owners.</span></div>
+  </div>
+</footer>
+<script src="../assets/main.js?v=1.1.0" defer></script>
+</body>
+</html>

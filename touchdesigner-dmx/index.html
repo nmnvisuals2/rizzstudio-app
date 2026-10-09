@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TouchDesigner DMX Receiver for Ableton | RizzStudio</title>
+<meta name="description" content="A ready-made TouchDesigner receiver that turns Ableton DMX-over-MIDI into Art-Net or sACN, plus a Syphon bridge for LED walls.">
+<link rel="canonical" href="https://nmnvisuals2.github.io/rizzstudio-app/touchdesigner-dmx/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050506">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="RizzStudio">
+<meta property="og:title" content="TouchDesigner DMX Receiver for Ableton | RizzStudio">
+<meta property="og:description" content="A ready-made TouchDesigner receiver that turns Ableton DMX-over-MIDI into Art-Net or sACN, plus a Syphon bridge for LED walls.">
+<meta property="og:url" content="https://nmnvisuals2.github.io/rizzstudio-app/touchdesigner-dmx/">
+<meta property="og:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TouchDesigner DMX Receiver for Ableton | RizzStudio">
+<meta name="twitter:description" content="A ready-made TouchDesigner receiver that turns Ableton DMX-over-MIDI into Art-Net or sACN, plus a Syphon bridge for LED walls.">
+<meta name="twitter:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css?v=1.1.0">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "RizzStudio", "item": "https://nmnvisuals2.github.io/rizzstudio-app/"}, {"@type": "ListItem", "position": 2, "name": "TouchDesigner", "item": "https://nmnvisuals2.github.io/rizzstudio-app/touchdesigner-dmx/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "TouchDesigner DMX receiver for Ableton shows", "description": "A ready-made TouchDesigner receiver that turns Ableton DMX-over-MIDI into Art-Net or sACN, plus a Syphon bridge for LED walls.", "url": "https://nmnvisuals2.github.io/rizzstudio-app/touchdesigner-dmx/", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "publisher": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "image": "https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg", "about": {"@type": "SoftwareApplication", "name": "RizzStudio"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to know TouchDesigner?", "acceptedAnswer": {"@type": "Answer", "text": "Barely. Drop the bundled receiver component into a project, choose Art-Net or sACN and your universe, and switch Send DMX on. The kit export includes a SETUP.txt walkthrough."}}, {"@type": "Question", "name": "Does it work with the free TouchDesigner licence?", "acceptedAnswer": {"@type": "Answer", "text": "The receiver is a small, standard network of operators. Check Derivative's current licence terms for the output features you need."}}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../#how">Features</a></li><li><a href="../ai-light-show/">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/">Ableton DMX</a></li><li><a href="../guide/">Guide</a></li>
+      <li><a class="btn btn-primary btn-sm" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip">Download</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="page-hero"><div class="wrap"><p class="crumbs"><a href="../">RizzStudio</a> / TouchDesigner</p><h1>TouchDesigner DMX receiver for Ableton shows</h1><p class="lede">A ready-made TouchDesigner component that turns Ableton's MIDI into Art-Net or sACN, plus a Syphon bridge for LED walls.</p></div></section><div class="wrap"><article class="prose"><p>TouchDesigner is one of the best ways to get DMX, Art-Net and sACN out of a computer, and it's already the tool of
+choice for VJs and lighting artists. <strong>RizzStudio ships a ready-made TouchDesigner receiver</strong> that turns
+the MIDI coming from Ableton Live into live lighting data, plus a video bridge for LED walls.</p>
+
+<h2>The receiver component</h2>
+<p><code>Touchableton_Receiver.tox</code> is bundled inside the app and included in every TouchDesigner kit export. Drop it
+into your project and the signal chain is ready:</p>
+<pre><code>midi_devices → midi_in → decode (Script CHOP) → universe1 → dmx_out</code></pre>
+<p>Its custom parameters cover everything you need on show day:</p>
+<ul>
+  <li><strong>Source</strong>: listen to the RizzStudio app directly, or to Ableton over the IAC driver</li>
+  <li><strong>MIDI channels</strong>: which channels carry your universes (up to 4)</li>
+  <li><strong>Send DMX</strong>: master on/off for the output</li>
+  <li><strong>Interface</strong>: Art-Net or sACN, with address and universe</li>
+</ul>
+
+<h2>The TouchDesigner kit export</h2>
+<p>Exporting the kit gives you the receiver <code>.tox</code>, the Python decoder script, a <code>patch.csv</code> with
+every fixture address, and a <code>SETUP.txt</code> walkthrough. Hand it to the venue's TouchDesigner operator, or run
+it yourself on the same Mac as Ableton.</p>
+
+<h2>LED walls over Syphon</h2>
+<p>RizzStudio can also go the other way. The bundled <code>Touchableton_VideoOut.tox</code> publishes any TOP as a
+<strong>Syphon</strong> sender. RizzStudio picks it up and shows your visuals live on a virtual LED wall,
+pixelated to the wall's real resolution, with stage colour spill. It can even sample the wall's colours to drive
+the rest of the rig, so the lights match the visuals.</p>
+
+<figure><img src="../assets/img/feature-stage.jpg" width="1536" height="1024" loading="lazy"
+  alt="3D stage preview with LED wall, moving heads and washes driven by TouchDesigner"></figure>
+
+<h2>Why MIDI between Ableton and TouchDesigner?</h2>
+<p>Ableton can't output DMX natively, but it's excellent at playing MIDI in perfect time. Encoding DMX as MIDI notes
+(one note per channel, velocity as value) keeps the show inside Ableton's timeline, where it follows tempo and scene
+changes, while TouchDesigner handles the network side. See the full encoding on the
+<a href="../ableton-dmx-lighting/">Ableton DMX lighting</a> page.</p>
+
+<h2>Don't want to program it?</h2>
+<p>That's what RizzStudio is for. Its <a href="../ai-light-show/">AI light show generator</a> programs the whole show
+from your music, and TouchDesigner just plays it.</p>
+<h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>Do I need to know TouchDesigner?</summary><p>Barely. Drop the bundled receiver component into a project, choose Art-Net or sACN and your universe, and switch Send DMX on. The kit export includes a SETUP.txt walkthrough.</p></details>
+<details><summary>Does it work with the free TouchDesigner licence?</summary><p>The receiver is a small, standard network of operators. Check Derivative&#x27;s current licence terms for the output features you need.</p></details></div></article><div class="cta-band" style="margin-top:64px"><img src="../assets/img/icon.png" width="84" height="84" alt="RizzStudio app icon" loading="lazy"><h2>Try RizzStudio <em>free</em></h2><p>AI light shows for Ableton Live on macOS. No API key needed.</p><div class="cta-row"><a class="btn btn-primary" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.75.66 1.13-.02 1.85-1.03 2.55-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.4c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.62-.88 2.57.93.07 1.88-.47 2.46-1.17z"/></svg> Download for macOS</a></div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
+        <p style="margin-top:14px;max-width:320px">AI light show software for Ableton Live on macOS. Your set in, a full
+          light show out.</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="../">Overview</a></li>
+        <li><a href="../download/">Download</a></li>
+        <li><a href="https://github.com/nmnvisuals2/rizzstudio-app/releases">Release notes</a></li>
+        <li><a href="../guide/">User guide</a></li></ul></div>
+      <div><h4>Learn</h4><ul><li><a href="../ai-light-show/">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/">Ableton DMX</a></li><li><a href="../touchdesigner-dmx/">TouchDesigner</a></li><li><a href="../alternatives/">Alternatives</a></li><li><a href="../download/">Download</a></li><li><a href="../guide/">Guide</a></li></ul></div>
+      <div><h4>Works with</h4><ul>
+        <li>Ableton Live</li><li>TouchDesigner</li><li>Art-Net · sACN</li><li>Open Fixture Library</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 RizzStudio by NMN Visuals</span>
+      <span>Ableton and TouchDesigner are trademarks of their respective owners.</span></div>
+  </div>
+</footer>
+<script src="../assets/main.js?v=1.1.0" defer></script>
+</body>
+</html>
