@@ -39,6 +39,12 @@ your rig through **TouchDesigner → Art-Net / sACN / DMX**.
  🎵 .als / audio  →  🔬 analysis  →  🤖 AI plan  →  🎚️ programmer  →  🎹 Ableton MIDI  →  💡 lights
 ```
 
+## 📸 Screenshots
+
+<p align="center"><img src="docs/assets/screens/screen-plan.jpg" alt="Plan view: analysis, AI sections, instrument detection, light lanes, cue inspector" /></p>
+<p align="center"><img src="docs/assets/screens/screen-timeline.jpg" alt="Timeline zoomed to a drop: hit-accurate chunks and layered light groups" /></p>
+<p align="center"><img src="docs/assets/screens/screen-perform.jpg" alt="Perform view: stage preview, DMX patch, DMX monitor, TouchDesigner and Ableton export" /></p>
+
 ## ⚡ Highlights
 
 | | |

@@ -213,3 +213,12 @@ h2 { font: 400 clamp(36px, 5vw, 60px)/1.05 var(--serif); margin-top: 12px; }
   .hide-sm { display: none; }
   .steps, .grid, .foot { grid-template-columns: 1fr; }
 }
+
+/* ---------- app tour ---------- */
+.tour-tabs { display: flex; justify-content: center; gap: 6px; margin: -24px auto 28px; padding: 5px; width: fit-content;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--bg-2); }
+.tour-tabs button { font: 600 14.5px/1 var(--sans); color: var(--muted); background: none; border: 0; padding: 11px 22px;
+  border-radius: 999px; cursor: pointer; transition: background .2s, color .2s; }
+.tour-tabs button[aria-selected="true"] { background: #fff; color: #000; }
+.tour figure { margin: 0; border-radius: 22px; overflow: hidden; border: 1px solid var(--line);
+  box-shadow: 0 40px 120px rgba(0,0,0,.55), var(--glow); }
