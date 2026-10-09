@@ -4,7 +4,7 @@
 
 # ✨ RizzStudio ✨
 
-### Your Ableton set in, a full AI lightshow out.
+### Your songs in, a full AI light show out.
 
 <p>
   <img src="https://img.shields.io/badge/version-1.1.0-111?style=for-the-badge" alt="Version 1.1.0" />
@@ -13,7 +13,9 @@
   <img src="https://img.shields.io/badge/Swift-SwiftUI-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="SwiftUI" />
 </p>
 <p>
+  <img src="https://img.shields.io/badge/Any%20song-MP3%20·%20WAV%20·%20FLAC-1b1b1b?style=flat-square" alt="Any song" />
   <img src="https://img.shields.io/badge/Ableton%20Live-000?style=flat-square&logo=abletonlive&logoColor=white" alt="Ableton Live" />
+  <img src="https://img.shields.io/badge/More%20DAWs-coming%20soon-1b1b1b?style=flat-square" alt="More DAWs coming soon" />
   <img src="https://img.shields.io/badge/TouchDesigner-1b1b1b?style=flat-square" alt="TouchDesigner" />
   <img src="https://img.shields.io/badge/Art--Net%20%C2%B7%20sACN%20%C2%B7%20DMX-1b1b1b?style=flat-square" alt="Art-Net, sACN, DMX" />
   <img src="https://img.shields.io/badge/AI-Claude%20Code%20%7C%20Codex-D97757?style=flat-square" alt="Claude Code or Codex" />
@@ -35,12 +37,14 @@
 
 ## 🎛️ What it does
 
-**RizzStudio** reads an Ableton Live set (or plain audio files), analyses every song and uses AI to program
-a show beat by beat. It then exports that show back **into Ableton as DMX-over-MIDI**, so Ableton alone drives
-your rig through **TouchDesigner → Art-Net / sACN / DMX**.
+**RizzStudio** creates **automatic AI light shows from your songs**. Drop in audio files or an Ableton Live set:
+it analyses every kick, clap, drop and silence, and AI programs a beat-accurate DMX show. You can play it live
+over **Art-Net / sACN / DMX** or export it **into Ableton as DMX-over-MIDI**.
+
+> 🎚️ **Works with:** any audio file (MP3 · WAV · AIFF · M4A · FLAC) and Ableton Live today. **More DAWs are coming.**
 
 ```
- 🎵 .als / audio  →  🔬 analysis  →  🤖 AI plan  →  🎚️ programmer  →  🎹 Ableton MIDI  →  💡 lights
+ 🎵 songs / .als  →  🔬 analysis  →  🤖 AI plan  →  🎚️ programmer  →  💡 live DMX  ·  🎹 Ableton
 ```
 
 ## 📸 Screenshots

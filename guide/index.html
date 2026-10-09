@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RizzStudio User Guide: AI Lighting for Ableton</title>
-<meta name="description" content="The complete RizzStudio guide: Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems, video export and DMX.">
+<title>RizzStudio User Guide: AI Light Shows from Songs</title>
+<meta name="description" content="The complete RizzStudio guide: songs and Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems and DMX.">
 <link rel="canonical" href="https://nmnvisuals2.github.io/rizzstudio-app/guide/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#050506">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="RizzStudio">
-<meta property="og:title" content="RizzStudio User Guide: AI Lighting for Ableton">
-<meta property="og:description" content="The complete RizzStudio guide: Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems, video export and DMX.">
+<meta property="og:title" content="RizzStudio User Guide: AI Light Shows from Songs">
+<meta property="og:description" content="The complete RizzStudio guide: songs and Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems and DMX.">
 <meta property="og:url" content="https://nmnvisuals2.github.io/rizzstudio-app/guide/">
 <meta property="og:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="RizzStudio User Guide: AI Lighting for Ableton">
-<meta name="twitter:description" content="The complete RizzStudio guide: Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems, video export and DMX.">
+<meta name="twitter:title" content="RizzStudio User Guide: AI Light Shows from Songs">
+<meta name="twitter:description" content="The complete RizzStudio guide: songs and Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems and DMX.">
 <meta name="twitter:image" content="https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="../assets/style.css?v=1.1.0">
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "RizzStudio", "item": "https://nmnvisuals2.github.io/rizzstudio-app/"}, {"@type": "ListItem", "position": 2, "name": "Guide", "item": "https://nmnvisuals2.github.io/rizzstudio-app/guide/"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "RizzStudio user guide", "description": "The complete RizzStudio guide: Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems, video export and DMX.", "url": "https://nmnvisuals2.github.io/rizzstudio-app/guide/", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "publisher": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "image": "https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg", "about": {"@type": "SoftwareApplication", "name": "RizzStudio"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "RizzStudio user guide", "description": "The complete RizzStudio guide: songs and Ableton sets, AI show planning, the timeline, Perform mode, fixture profiles, stems and DMX.", "url": "https://nmnvisuals2.github.io/rizzstudio-app/guide/", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "publisher": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "image": "https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg", "about": {"@type": "SoftwareApplication", "name": "RizzStudio"}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -42,7 +42,7 @@
   </nav>
 </header>
 <main>
-<section class="page-hero"><div class="wrap"><p class="crumbs"><a href="../">RizzStudio</a> / Guide</p><h1>RizzStudio user guide</h1><p class="lede">Everything RizzStudio can do, from opening a set to exporting the show into Ableton.</p></div></section><div class="wrap"><article class="prose"><nav class="toc" aria-label="Contents"><strong>Contents</strong><ol><li><a href="#workflow">Workflow</a></li><li><a href="#ableton-touchdesigner-protocol-dmx-over-midi">Ableton ⇄ TouchDesigner protocol (DMX over MIDI)</a></li><li><a href="#ai-engines-settings-ai-engine">AI engines (Settings → AI Engine)</a></li></ol></nav><p>Native macOS app (SwiftUI + AppKit, borderless plugin-style window) that reads an Ableton Live set's <strong>Session</strong> or <strong>Arrangement</strong> playlist, analyses every song, programs a <strong>granular lightshow</strong> with AI (your local <strong>Claude Code</strong> or <strong>Codex</strong> CLI — no API key) and exports it <strong>into Ableton</strong> as DMX-over-MIDI, so Ableton alone drives the lights through <strong>TouchDesigner → Art-Net / sACN / DMX</strong>.</p>
+<section class="page-hero"><div class="wrap"><p class="crumbs"><a href="../">RizzStudio</a> / Guide</p><h1>RizzStudio user guide</h1><p class="lede">Everything RizzStudio can do, from opening a song or set to playing the show live.</p></div></section><div class="wrap"><article class="prose"><nav class="toc" aria-label="Contents"><strong>Contents</strong><ol><li><a href="#workflow">Workflow</a></li><li><a href="#ableton-touchdesigner-protocol-dmx-over-midi">Ableton ⇄ TouchDesigner protocol (DMX over MIDI)</a></li><li><a href="#ai-engines-settings-ai-engine">AI engines (Settings → AI Engine)</a></li></ol></nav><p>Native macOS app (SwiftUI + AppKit, borderless plugin-style window) that reads an Ableton Live set's <strong>Session</strong> or <strong>Arrangement</strong> playlist, analyses every song, programs a <strong>granular lightshow</strong> with AI (your local <strong>Claude Code</strong> or <strong>Codex</strong> CLI — no API key) and exports it <strong>into Ableton</strong> as DMX-over-MIDI, so Ableton alone drives the lights through <strong>TouchDesigner → Art-Net / sACN / DMX</strong>.</p>
 <p>(Formerly <em>Touchableton</em>. Integration names are unchanged so existing rigs keep working: the virtual MIDI port and Live Control Surface are still called <strong>Touchableton</strong>, as are the TouchDesigner receiver <code>.tox</code>, the Syphon sender prefix and the Swift target; settings and caches carry over.)</p>
 <h2 id="workflow">Workflow</h2>
 <ol><li><strong>Open</strong> an <code>.als</code> → every audio clip becomes a playlist song; analysis runs automatically (&lt; 1 s/song). <strong>Or open audio files</strong> (mp3, wav, aiff, m4a, flac — Open, drag &amp; drop, or <em>New Project from Audio</em>): a song on its own is enough. Several files become a playlist that plays back to back (each at its own tempo); <strong>Add Audio</strong> / right-click → <em>Remove from Playlist</em> edit it. The project reopens on next launch. Everything works the same except the two "copy of the .als" exports; Sync to Live places the clips as if the songs start at bar 1 back to back. <strong>Cover art</strong>: the playlist and song header show each song's cover — the picture embedded in the file's tags (ID3 / MP4 / FLAC), or, if there is none, the best title/artist match from Apple's iTunes Search API (toggle in Settings; sends only artist + title). Covers are cached in Application Support; right-click → <em>Refresh Cover Art</em>.</li><li><strong>Plan</strong> — AI (or the built-in rules) labels sections and writes one cue per section: feel (aggressive · energetic · groovy · smooth · soothing · ambient), mover patterns, mover dimmer FX, gobo, colour mode, wash / strobe / lasers / pixels / FX, transition, accent hits.
@@ -57,15 +57,15 @@ MIDI channel = s/128 + 1, note = s%128, velocity 1..127 = DMX 0..255 while held,
 <p>TouchDesigner receiver (<code>touchableton_receiver</code> COMP): <code>midi_devices → midi_in → decode (Script CHOP) → universe1 → dmx_out</code>. Custom pars: Source (Touchableton app / IAC Ableton), MIDI channels, Send DMX, Interface (Art-Net/sACN), address, universe.</p>
 <h2 id="ai-engines-settings-ai-engine">AI engines (Settings → AI Engine)</h2>
 <table><thead><tr><th>Engine</th><th>Command</th><th>Notes</th></tr></thead><tbody><tr><td>Claude Code</td><td><code>claude -p --output-format json --model claude-opus-5-5</code> (tools disabled)</td><td>needs <strong>2.1.280+</strong> (<code>claude update</code>, button in Settings)</td></tr><tr><td>Codex</td><td><code>codex exec --output-schema … --sandbox read-only</code></td><td>effort low/medium/high</td></tr></tbody></table>
-<p>Never hangs: per-attempt timeout (default 4 min, process killed), Cancel button, fallback chain (chosen model → CLI default model → other CLI → rules). Runs via <code>zsh -l</code> so Finder-launched apps see your PATH.</p></article><div class="cta-band" style="margin-top:64px"><img src="../assets/img/icon.png" width="84" height="84" alt="RizzStudio app icon" loading="lazy"><h2>Try RizzStudio <em>free</em></h2><p>AI light shows for Ableton Live on macOS. No API key needed.</p><div class="cta-row"><a class="btn btn-primary" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.75.66 1.13-.02 1.85-1.03 2.55-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.4c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.62-.88 2.57.93.07 1.88-.47 2.46-1.17z"/></svg> Download for macOS</a></div></div></div>
+<p>Never hangs: per-attempt timeout (default 4 min, process killed), Cancel button, fallback chain (chosen model → CLI default model → other CLI → rules). Runs via <code>zsh -l</code> so Finder-launched apps see your PATH.</p></article><div class="cta-band" style="margin-top:64px"><img src="../assets/img/icon.png" width="84" height="84" alt="RizzStudio app icon" loading="lazy"><h2>Try RizzStudio <em>free</em></h2><p>Automatic AI light shows from your songs, on macOS. No API key needed.</p><div class="cta-row"><a class="btn btn-primary" href="https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.75.66 1.13-.02 1.85-1.03 2.55-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.4c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.62-.88 2.57.93.07 1.88-.47 2.46-1.17z"/></svg> Download for macOS</a></div></div></div>
 </main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot">
       <div>
         <a class="brand" href="../"><img src="../assets/img/icon.png" width="32" height="32" alt=""><span>RizzStudio</span></a>
-        <p style="margin-top:14px;max-width:320px">AI light show software for Ableton Live on macOS. Your set in, a full
-          light show out.</p>
+        <p style="margin-top:14px;max-width:320px">Automatic AI light shows from your songs and Ableton sets on macOS.
+          More DAWs coming soon.</p>
       </div>
       <div><h4>Product</h4><ul>
         <li><a href="../">Overview</a></li>
@@ -74,7 +74,7 @@ MIDI channel = s/128 + 1, note = s%128, velocity 1..127 = DMX 0..255 while held,
         <li><a href="../guide/">User guide</a></li></ul></div>
       <div><h4>Learn</h4><ul><li><a href="../ai-light-show/">AI Light Show</a></li><li><a href="../ableton-dmx-lighting/">Ableton DMX</a></li><li><a href="../touchdesigner-dmx/">TouchDesigner</a></li><li><a href="../alternatives/">Alternatives</a></li><li><a href="../download/">Download</a></li><li><a href="../guide/">Guide</a></li></ul></div>
       <div><h4>Works with</h4><ul>
-        <li>Ableton Live</li><li>TouchDesigner</li><li>Art-Net · sACN</li><li>Open Fixture Library</li></ul></div>
+        <li>Any audio file</li><li>Ableton Live</li><li>TouchDesigner</li><li>Art-Net · sACN</li><li>More DAWs soon</li></ul></div>
     </div>
     <div class="foot-bottom"><span>© 2026 RizzStudio by NMN Visuals</span>
       <span>Ableton and TouchDesigner are trademarks of their respective owners.</span></div>
