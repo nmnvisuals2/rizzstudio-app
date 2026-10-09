@@ -9,6 +9,12 @@
     });
   }
 
+  // Background hero video: respect reduced-motion.
+  var bg = document.querySelector(".hero-bg");
+  if (bg && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    bg.removeAttribute("autoplay"); bg.pause();
+  }
+
   // App tour tabs (Plan / Timeline / Perform).
   var tabs = document.querySelectorAll('.tour-tabs [role="tab"]');
   tabs.forEach(function (tab) {

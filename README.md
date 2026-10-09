@@ -23,6 +23,10 @@
   <img src="https://img.shields.io/badge/⬇%20Download%20for%20macOS-RizzStudio.app-000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download RizzStudio for macOS" />
 </a>
 
+<br><br>
+<a href="https://nmnvisuals2.github.io/rizzstudio-app/assets/video/rizzstudio-walkthrough.mp4"><img src="docs/assets/screens/walkthrough.jpg" width="760" alt="Watch the RizzStudio walkthrough video" /></a>
+<br>
+
 <sub><a href="https://github.com/nmnvisuals2/rizzstudio-app/releases">All releases</a> · <a href="docs/GUIDE.md">Full guide</a></sub>
 
 </div>

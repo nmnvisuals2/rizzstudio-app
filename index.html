@@ -29,6 +29,7 @@
 <link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RizzStudio", "applicationCategory": "MultimediaApplication", "applicationSubCategory": "Lighting control", "operatingSystem": "macOS 14 or later (Apple Silicon)", "softwareVersion": "1.1.0", "description": "AI light show software for Ableton Live on Mac. RizzStudio programs beat-accurate DMX shows for movers, lasers and strobes from your set. Free download.", "url": "https://nmnvisuals2.github.io/rizzstudio-app/", "downloadUrl": "https://github.com/nmnvisuals2/rizzstudio-app/releases/latest/download/RizzStudio-macOS.zip", "image": "https://nmnvisuals2.github.io/rizzstudio-app/assets/img/og.jpg", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "NMN Visuals", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}, "featureList": ["AI light show generation", "Ableton Live DMX-over-MIDI export", "TouchDesigner Art-Net / sACN receiver", "3D stage preview", "Fixture profiles", "Stem separation", "Show video export"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "RizzStudio", "url": "https://nmnvisuals2.github.io/rizzstudio-app/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "RizzStudio walkthrough", "description": "A 35-second tour of RizzStudio: analysing an Ableton set, planning the light show with AI, the beat-accurate timeline, Perform mode and exporting to Ableton.", "thumbnailUrl": "https://nmnvisuals2.github.io/rizzstudio-app/assets/video/walkthrough-poster.jpg", "contentUrl": "https://nmnvisuals2.github.io/rizzstudio-app/assets/video/rizzstudio-walkthrough.mp4", "uploadDate": "2026-10-09", "duration": "PT35S"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is RizzStudio?", "acceptedAnswer": {"@type": "Answer", "text": "RizzStudio is a macOS app that turns an Ableton Live set or audio files into a complete, beat-accurate DMX light show. It analyses each song, uses AI to program the lighting and exports the show back into Ableton as DMX-over-MIDI, so Ableton drives your lights through TouchDesigner to Art-Net, sACN or DMX."}}, {"@type": "Question", "name": "Is RizzStudio free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. RizzStudio is currently a free download for macOS from GitHub releases."}}, {"@type": "Question", "name": "Do I need an OpenAI or Anthropic API key?", "acceptedAnswer": {"@type": "Answer", "text": "No. RizzStudio uses the Claude Code or Codex command-line tool you already have installed and signed in. Without either, a built-in rules engine still programs the full show."}}, {"@type": "Question", "name": "Which lights does it support?", "acceptedAnswer": {"@type": "Answer", "text": "Moving heads, RGB washes, strobes, blinders, lasers, pixel bars, LED walls and special effects such as haze, CO₂, sparkulars, confetti and flames. Fixture profiles from the Open Fixture Library map the show to each fixture's real DMX channels."}}, {"@type": "Question", "name": "Does it work without Ableton Live?", "acceptedAnswer": {"@type": "Answer", "text": "You can open plain MP3, WAV, AIFF, M4A or FLAC files, preview the show on the 3D stage and render it to video without Ableton. To run real lights from the show, Ableton plays the exported MIDI, or RizzStudio can output Art-Net directly in Perform mode."}}, {"@type": "Question", "name": "Which Macs are supported?", "acceptedAnswer": {"@type": "Answer", "text": "macOS 14 Sonoma or later on Apple Silicon (M1 and newer)."}}]}</script>
 </head>
 <body>
@@ -44,6 +45,9 @@
 </header>
 <main>
 <section class="hero">
+  <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-poster.jpg" aria-hidden="true">
+    <source src="assets/video/rizzstudio-hero.mp4" type="video/mp4">
+  </video>
   <div class="wrap">
     <span class="eyebrow"><b>✦ New</b> v1.1.0 · 3D moving heads<span class="hide-sm"> &amp; real fixture profiles</span></span>
     <h1>AI light shows, <em>straight from Ableton.</em></h1>
@@ -55,9 +59,11 @@
     </div>
     <p class="meta-row">Free download · macOS 14+ · Apple Silicon · No API key needed</p>
     <div class="hero-shot reveal">
-      <img src="assets/img/hero.jpg" width="1536" height="1024"
-        alt="Club stage with moving-head lights and lasers cutting through haze, programmed automatically by RizzStudio"
-        fetchpriority="high">
+      <video controls playsinline preload="none" width="1920" height="1080"
+        poster="assets/video/walkthrough-poster-play.jpg"
+        aria-label="RizzStudio walkthrough: analysing a set, planning the show with AI, the timeline, Perform mode and exporting to Ableton">
+        <source src="assets/video/rizzstudio-walkthrough.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
